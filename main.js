@@ -36,7 +36,7 @@ function layout(){
   const cur=h=>h===here||(here==='destination.html'&&h==='destinations.html')?' aria-current="page"':'';
   document.body.insertAdjacentHTML('afterbegin',
     (bfOn()?`<div class="bf">Black Friday: ${BF.off*100}% off annual plans until Nov 30. Use code ${BF.code}. <a href="plans.html#black-friday">See offers</a></div>`:'')+
-    `<header><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/logo.jpeg" alt="">TapTravel</a><nav>${links.map(([h,t])=>`<a href="${h}"${cur(h)}>${t}</a>`).join('')}</nav></div></header>`);
+    `<header><div class="wrap nav"><a class="brand" href="index.html"><img src="logo.jpeg" alt="">TapTravel</a><nav>${links.map(([h,t])=>`<a href="${h}"${cur(h)}>${t}</a>`).join('')}</nav></div></header>`);
   document.body.insertAdjacentHTML('beforeend',
     `<footer><div class="wrap"><div><strong>TapTravel</strong><br>Tap the map. Arrive.<br>© 2026 TapTravel</div><div>${links.map(([h,t])=>`<a href="${h}">${t}</a>`).join('')}</div><div><a href="policies.html#ages">Legal ages</a><a href="policies.html#look">Local Look rules</a><a href="policies.html#refunds">Billing and refunds</a></div></div></footer>`);
   if(!bfOn())document.querySelectorAll('[data-bf]').forEach(e=>e.remove());
