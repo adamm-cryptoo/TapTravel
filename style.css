@@ -1,7 +1,7 @@
 :root{--void:#040814;--deep:#0a1530;--glow:#4db3ff;--city:#f5b862;--mist:#e6eefc;--dim:#8fa3c7;--line:rgba(120,170,255,.2);--r:18px}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--void);color:var(--mist);font:16px/1.6 'Instrument Sans',system-ui,sans-serif}
+body{background:var(--void);color: var(#2F4A63);font:16px/1.6 'Instrument Sans',system-ui,sans-serif}
 h1,h2,h3{font-family:'Syne',system-ui,sans-serif;line-height:1.08;letter-spacing:-.02em}
 h1{font-size:clamp(2.4rem,6vw,4.6rem)}h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin-bottom:14px}h3{font-size:1.25rem;margin-bottom:6px}
 a{color:inherit}p{max-width:62ch;color:#c4d2ee}
