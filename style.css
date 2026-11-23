@@ -42,7 +42,7 @@ section{padding:64px 0}
 .split{display:grid;gap:36px;grid-template-columns:1fr 1fr;align-items:center}
 @media(max-width:760px){.split{grid-template-columns:1fr}}
 .split img{width:100%;max-width:380px;border-radius:28px;justify-self:center}
-.dhero{padding:72px 0;background:linear-gradient(160deg,var(--a),var(--b))}.dhero p,.dhero h1{color:#fff;margin-bottom:12px}
+.dhero{padding:72px 0;background:linear-gradient(160deg,var(--a),var(--b))}.dhero p,.dhero h1{color:#fff;margin-bottom:12px}.dhero.photo{background:linear-gradient(rgba(4,8,20,.45),rgba(4,8,20,.7)),var(--img) center/cover no-repeat}
 .plan.feat{border-color:var(--city)}.plan .btn{margin-top:14px}
 .price{font:800 2.2rem Syne}.price small{font:400 1rem 'Instrument Sans';color:var(--dim)}
 .old{text-decoration:line-through;color:var(--dim);min-height:1.6em}
