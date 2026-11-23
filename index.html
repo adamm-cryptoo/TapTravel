@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TapTravel | Tap the map. Arrive.</title><meta name="description" content="TapTravel teleports you anywhere on Earth. Tap the map, press teleport, step out."><link rel="icon" href="assets/logo.jpeg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<main>
+<section class="hero"><div class="wrap">
+<h1>Tap the map. Arrive.</h1>
+<p class="lead">TapTravel works like a map app, but when you press Teleport you actually go. Pick a gate below to try it.</p>
+<div class="map" id="map" role="group" aria-label="World map. Tap a pin to choose a destination."><canvas aria-hidden="true"></canvas></div>
+<div class="panel"><div><strong id="pname">Tap a pin or anywhere on the map</strong><span id="pinfo">Eight gates are open today.</span></div><button class="btn" id="go" disabled>Teleport</button></div>
+</div></section>
+<section><div class="wrap"><h2>How it works</h2><div class="grid steps">
+<div class="card"><h3>Tap a place</h3><p>Zoom the world map and tap any open gate. You see local time, language, and what to do there.</p></div>
+<div class="card"><h3>Press Teleport</h3><p>Confirm your gate and your Local Look. The app clears your arrival spot and counts you down.</p></div>
+<div class="card"><h3>Step out</h3><p>You arrive at the gate in about a second. Tap Return any time to come home.</p></div></div></div></section>
+<section><div class="wrap split"><div><h2>Local Look: arrive dressed for the place</h2>
+<p>When you teleport, TapTravel changes your clothing, hairstyle, accessories, and spoken language to fit your destination. In Barcelona you get linen and sunglasses. In Tokyo you get tailored layers and fluent Japanese.</p>
+<p>Your face, age, gender, skin tone, and body never change. Local Look is optional, and you can switch it off or revert it at any time.</p>
+<p style="margin-top:16px"><a class="btn ghost" href="policies.html#look">Read the Local Look rules</a></p></div>
+<img src="assets/logo.jpeg" alt="TapTravel logo: a glowing map pin above Earth"></div></section>
+<section><div class="wrap"><h2>Open gates</h2><div class="grid" id="featured"></div><p style="margin-top:20px"><a class="btn ghost" href="destinations.html">See all destinations</a></p></div></section>
+<section data-bf><div class="wrap"><div class="bfbox"><h2>Black Friday: 40% off annual plans</h2><p>Premium, Family, and Explorer are discounted for your first year. Use code TAPFRIDAY.</p><div class="count" aria-label="Time left"></div><a class="btn city" href="plans.html#black-friday">See Black Friday offers</a></div></div></section>
+</main>
+<div class="warp" id="warp" aria-live="polite"><i></i><p id="wtxt"></p></div>
+<script src="js/data.js"></script><script src="js/main.js"></script></body></html>
