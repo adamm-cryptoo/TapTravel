@@ -69,7 +69,7 @@ function initDest(){
   const p=new URLSearchParams(location.search),i=Math.max(0,DEST.findIndex(d=>d.id===p.get('id'))),d=DEST[i],
     n=DEST[(i+1)%DEST.length],pv=DEST[(i+DEST.length-1)%DEST.length];
   document.title=d.name+' | TapTravel';
-  el.innerHTML=`<section class="dhero" style="--a:${d.c[0]};--b:${d.c[1]}"><div class="wrap"><p>${d.country}</p><h1>${d.name}</h1><p>${d.tag}</p>${p.get('arrived')?'<p><b>You have arrived. Your Local Look is on.</b></p>':''}<a class="btn" href="plans.html">Get teleports</a></div></section>
+  el.innerHTML=`<section class="dhero${d.img?' photo':''}" style="--a:${d.c[0]};--b:${d.c[1]}${d.img?`;--img:url('${d.img}')`:''}"><div class="wrap"><p>${d.country}</p><h1>${d.name}</h1><p>${d.tag}</p>${p.get('arrived')?'<p><b>You have arrived. Your Local Look is on.</b></p>':''}<a class="btn" href="plans.html">Get teleports</a></div></section>
   <section><div class="wrap split"><div><h2>About ${d.name}</h2><p>${d.about}</p><h3 style="margin-top:24px">Highlights</h3><ul class="tick">${d.hl.map(h=>`<li>${h}</li>`).join('')}</ul></div>
   <div class="card"><h3>Gate details</h3><table><tr><th>Arrival gate</th><td>${d.gate}</td></tr><tr><th>Local time</th><td>${time(d.tz)}</td></tr><tr><th>Language</th><td>${d.lang}</td></tr><tr><th>Best for</th><td>${d.best}</td></tr><tr><th>Gate access</th><td>${d.tier} plan and up</td></tr></table></div></div></section>
   <section><div class="wrap"><div class="card"><h2>Your Local Look in ${d.name}</h2><p>${d.look}</p><p>Your face, age, gender, skin tone, and body stay yours. <a href="policies.html#look">Read the Local Look rules</a>.</p></div></div></section>
