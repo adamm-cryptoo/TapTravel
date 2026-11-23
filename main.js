@@ -28,7 +28,7 @@ const LAND=[
 const $=(s,r=document)=>r.querySelector(s);
 const bfOn=()=>Date.now()<BF.end;
 const time=tz=>new Intl.DateTimeFormat([],{timeZone:tz,weekday:'short',hour:'2-digit',minute:'2-digit'}).format(new Date());
-const card=d=>`<a class="dcard" style="--a:${d.c[0]};--b:${d.c[1]}" href="destination.html?id=${d.id}"><h3>${d.name}</h3><p>${d.tag}</p></a>`;
+const card=d=>`<a class="dcard${d.img?' photo':''}" style="--a:${d.c[0]};--b:${d.c[1]}${d.img?`;--img:url('${d.img}')`:''}" href="destination.html?id=${d.id}"><h3>${d.name}</h3><p>${d.tag}</p></a>`;
 
 function layout(){
   const here=location.pathname.split('/').pop()||'index.html';
